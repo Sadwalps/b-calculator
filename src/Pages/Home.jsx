@@ -27,7 +27,7 @@ function Home() {
     }
     
         const calculate =()=>{
-            setBmicount((wei)/((hei)*(hei)))
+            setBmicount((wei)/((hei/100)*(hei/100)))
              
         }
     
@@ -66,12 +66,6 @@ function Home() {
 
                         <h4 className='text-center mt-2' onChange={(e)=>Validate(e)}  name='bmi' >Your BMI: <span>{bmicount}</span></h4>
                         <h6 className='text-center mt-2'>Start Workout</h6>
-
-                      
-
-                        
-                       
-                    
 
                 </div>
             </div>
