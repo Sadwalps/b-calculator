@@ -27,7 +27,7 @@ function Home() {
     }
     
         const calculate =()=>{
-            setBmicount((wei)/((hei/100)*(hei/100)))
+            setBmicount(Math.trunc((wei)/((hei/100)*(hei/100))))
              
         }
     
